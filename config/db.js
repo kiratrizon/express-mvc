@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const env = require('../env');
-const environment = "local";
+const environment = "prod";
 
 const connectDB = async () => {
     await mongoose.connect(env.dbconfig[environment], {
