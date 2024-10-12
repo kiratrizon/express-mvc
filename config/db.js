@@ -1,9 +1,8 @@
 const mongoose = require('mongoose');
 const env = require('../env');
-const environment = "prod";
 
 const connectDB = async () => {
-    await mongoose.connect(env.dbconfig[environment], {
+    await mongoose.connect(env.dbconfig, {
         // useNewUrlParser: true,
         // useUnifiedTopology: true,
     })
